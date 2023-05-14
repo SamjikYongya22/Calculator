@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Digital Calculator using HTML, CSS, and Java-Script</title>
-    <link rel="stylesheet" href="style.css" /> <!--linking html with css-->
+    <link rel="stylesheet" href="style.css" />
+    <!--linking html with css-->
   </head>
   <body>
     <div class="container">
@@ -18,21 +19,24 @@
             <input
               type="button"
               value="AC"
-              onclick="display.value ='' " 
+              onclick="display.value ='' "
               class="operator"
-            /> <!--attribute of java-script by onclick and making AC to clear all the actions on calculator-->
+            />
+            <!--attribute of java-script by onclick and making AC to clear all the actions on calculator-->
             <input
               type="button"
               value="DEL"
               onclick="display.value = display.value.toString().slice(0,-1) "
               class="operator"
-            /> <!--here in making button DEL to erase only one number at a time -->
+            />
+            <!--here in making button DEL to erase only one number at a time -->
             <input
               type="button"
               value="."
               onclick="display.value +='.'"
               class="operator"
-            /> <!--using "+" for clickig the number multiple times-->
+            />
+            <!--using "+" for clickig the number multiple times-->
             <input
               type="button"
               value="/"
@@ -81,7 +85,8 @@
               value="="
               onclick="display.value= eval(display.value)"
               class="equal operator"
-            /> <!--making equal sigh to perform task-->
+            />
+            <!--making equal sigh to perform task-->
           </div>
         </form>
       </div>
